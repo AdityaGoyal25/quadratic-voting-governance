@@ -50,9 +50,4 @@ geth --dev --http --http.api eth,web3,personal,net --http.corsdomain "*" --allow
 - Call `QVToken.balanceOf(yourAddress)` → returns `400` (500 - 100)
 - Call `QuadraticVoting.getProposal(0)` → returns `totalVoteWeight = 10`
 
-## Expected Output
-- Token balance decreases by **100** (N² = 10² = 100 tokens spent)
-- Proposal vote weight increases by only **10** (N = 10 votes)
-- Proves quadratic cost: more influence costs exponentially more tokens
 
-## Project Structure
